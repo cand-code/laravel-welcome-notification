@@ -3,7 +3,7 @@
 namespace Spatie\WelcomeNotification;
 
 use Carbon\CarbonInterface;
-use Illuminate\Foundation\Auth\User;
+use App\Models\User;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\Facades\Lang;
@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\URL;
 
 class WelcomeNotification extends Notification
 {
-    /** @var \Illuminate\Foundation\Auth\User */
+    /** @var \App\Models\User */
     public $user;
 
     /** @var string */
